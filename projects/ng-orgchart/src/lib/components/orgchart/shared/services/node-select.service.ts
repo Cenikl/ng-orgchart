@@ -13,7 +13,7 @@ export class NodeSelectService {
   }
 
   clearSelect() {
-    this.subject.next();
+    this.subject.next(null);
   }
 
   getSelect(): Observable<any> {
